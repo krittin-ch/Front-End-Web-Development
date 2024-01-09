@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {   /* CSS variable controlled by JS */
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.time {
+    font-size: 60px;
+}
+
+.toggle {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 420px;
+}
+
+html.dark {
+    --primary-color: #fff;
+    --secondary-color: #333;
+}
+
+html.dark {
+    background: #111;
+    color: var(--primary-color);
+}
+
+html {
+    transition: all 5s ease;
+}
