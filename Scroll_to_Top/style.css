@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Varela&display=swap');
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+section {
+    height: 100vh;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#home {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.container {
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.box {
+    border: 1px solid gray;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex > *{ /* Meaning for all element in class flex*/
+    margin: 3px;
+}
+
+.top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    padding: 1rem;
+    border: 1px solid red;
+    outline: navajowhite;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: all 0.3s;
+}
+
+.show-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
