@@ -20,12 +20,13 @@ async function getData() {
     result.innerText = ""
     items.forEach(data=>{
         const li  = document.createElement("li")
+        listItem.push(li)
         li.innerHTML = `
-        <img src = "${data.flag}">
-        <div class = "info">
-            <h4>${data.name}</h4>
-            <p>${formatNumber(data.population)}</p>
-        </div>
+            <img src = "${data.flag}">
+            <div class = "info">
+                <h4>${data.name}</h4>
+                <p>${formatNumber(data.population)}</p>
+            </div>
         `
         result.appendChild(li)
     });
