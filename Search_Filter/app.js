@@ -13,6 +13,7 @@ filter.addEventListener("input",(e)=>{
     })
 })
 
+
 async function getData() {
     const url = "https://restcountries.com/v2/all"
     const response = await fetch(url)
