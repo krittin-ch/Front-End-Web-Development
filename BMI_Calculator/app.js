@@ -10,14 +10,14 @@ function CalculateBMI() {
 
 function showResult(bmi, messege, color) {
     result.style.backgroundColor = color
+    result.classList.add("visible")
     return result.innerHTML = `Result: BMI = ${bmi} (${messege})`
 }
 
 function showBMI() {
-    if (weight === "" || isNaN(weight)) {
-        return result.innerHTML = "Please Enter Your Weight"
-    } else if (height === "" || isNaN(height)) {
-        return result.innerHTML = "Please Enter Your Height"
+    let BMI = CalculateBMI()
+    if (isNaN(BMI)) {
+        return result.innerHTML = "Please Enter Your Weight Or Height"
     } else {
         if (BMI < 18.5) {
             showResult(BMI, "Underweight", "cyan")
