@@ -78,4 +78,7 @@ input[type="text"]:focus {
     background-color: lightslategrey;
 }
 
-
+.result {
+    width: 100px;
+    height: 100px;
+}
